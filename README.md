@@ -12,7 +12,7 @@ ReCAPTCHA is a common interaction on the internet but everyone has experienced f
 There is a better way, with generative models like GPT-3 and DALL-E, where unique, beautiful, out of sample images offer a rich user experience and ease for humans but are almost impossible for a robot to solve. Instead of acting as a mousetrap, such a utility offers a better funnel, to get the intended user to the destination.
 
 
-![BETTER](multimedia/gradio_demo.m4v)
+![BETTER](multimedia/gradio_screen.jpg)
 
 ## Getting Started
 
