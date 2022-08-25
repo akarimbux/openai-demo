@@ -1,5 +1,5 @@
 
-# Project Title
+# OpenAI User Validation
 
 Building a better funnel to validate whether a human is interacting with a website using OpenAI GPT-3 and DALL-E.
 
