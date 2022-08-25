@@ -45,7 +45,7 @@ There is a better way, with generative models like GPT-3 and DALL-E, where uniqu
     * Generating image data:
     Modify configuration files above
     ```
-    python openai_gen_data.p
+    python openai_gen_data.py
     ```
 
 ### Observations
