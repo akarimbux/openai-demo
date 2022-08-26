@@ -21,6 +21,10 @@ def check_array(image_nums):
     my_list = list(map(int,image_nums))
     return "Yes, you got it!" if sorted(my_list) == sorted(target_array) else "No, try again!"
 
+# display result
+def display_result(image_nums):
+    return sorted(target_array)
+
 with gr.Blocks() as demo:
     gr.Markdown("Which of the images below contain a:")
     gr.Textbox(pick, show_label=False)
@@ -39,4 +43,7 @@ with gr.Blocks() as demo:
     click_result = gr.Textbox(label="Did you get it?")
     btn = gr.Button("Submit")   
     btn.click(fn=check_array, inputs=input_image, outputs=click_result)
+    show_result = gr.Textbox(label="Expected images are")
+    result = gr.Button("Show Result")   
+    result.click(fn=display_result, inputs=input_image, outputs=show_result)
 demo.launch()
