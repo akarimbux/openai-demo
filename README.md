@@ -41,6 +41,11 @@ There is a better way, with generative models like GPT-3 and DALL-E, where uniqu
     * Running the demo:
     ```
     python gradio_demo.py archive/grid_361990158667.pkl
+
+    python gradio_demo.py archive/grid_364817030500.pkl
+    
+    python gradio_demo.py archive/grid_1803160755458.pkl
+    
     ```
     * Generating image data:
     Modify configuration files above
