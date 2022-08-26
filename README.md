@@ -38,7 +38,7 @@ A demo video is available [here](multimedia/gradio_demo.mov)
     * `gradio_demo.py` runs a gradio app using a rotating set of pre-generated images. 3 pre-built bundles are included for your exploration
     * `openai_gen_data.py` generates seed phrases for GPT-3 to build prompts for DALL-E which are then used to return 4 images for each prompt, the results are pickled into the archive/ folder. The app above randomly loads one of these images for each prompt 
 
-* Step-by-step bullets
+* Step-by-step
     * Running the demo:
     ```
     python gradio_demo.py archive/grid_361990158667.pkl
@@ -55,4 +55,4 @@ A demo video is available [here](multimedia/gradio_demo.mov)
 
 ### Observations
 
-* To randomly cycle through the images in one of the bundles, you'll need to kill the terminal process running gradio and re-launch it. Gradio is cool but not there yet.
+* To randomly cycle through the images in one of the bundles, you'll need to kill the terminal process running gradio and re-launch it
