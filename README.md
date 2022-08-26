@@ -16,6 +16,9 @@ There is a better way, with generative models like GPT-3 and DALL-E, where uniqu
 
 ## Getting Started
 
+**Note**
+A demo video is available [here](multimedia/gradio_demo.mov)
+
 ### Dependencies
 
 * [Gradio](https://www.gradio.app/getting_started/)
