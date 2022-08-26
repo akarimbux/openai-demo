@@ -26,15 +26,8 @@ for i in result:
     # prevent overloading the task creation endpoint
     time.sleep(10)
     i['task_id'] = ta.createTask(i['gpt3_prompt'])
-    while ta.getStatus(i['task_id']) == 'pending':
-        # greedy check for task completion
-        time.sleep(10)
-    else:
-        if ta.getStatus(i['task_id']) == 'failed':
-            continue
-        else:
-            i['img_paths'] = ta.getImagePaths(i['task_id'])
-            i['images'] = [ta.downloadImage(k) for k in i['img_paths']]  
+    i['img_paths'] = ta.getImagePaths(i['task_id'])
+    i['images'] = [ta.downloadImage(k) for k in i['img_paths']]
 
 fn = 'archive/grid_' + str(time.monotonic_ns()) + '.pkl'
 

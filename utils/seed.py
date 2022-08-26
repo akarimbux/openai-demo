@@ -1,6 +1,6 @@
 # construct seed phrases to pass to GPT-3
-objects = ['boy','girl','friends']
-scenes = ['ice cream shop','fair','school']
+objects = ['cathedral','pyramid','tower']
+scenes = ['dali','monet','van gogh']
 
-connecting_term = ' at '
+connecting_term = ' in the style of '
 
