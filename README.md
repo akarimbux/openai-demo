@@ -34,7 +34,7 @@ There is a better way, with generative models like GPT-3 and DALL-E, where uniqu
 ### Executing program
 
 * This repo contains two python scripts:    
-    * `gradio_demo.py` runs a gradio app using a rotating set of pre-generated images. 2 pre-built bundles are included
+    * `gradio_demo.py` runs a gradio app using a rotating set of pre-generated images. 3 pre-built bundles are included for your exploration
     * `openai_gen_data.py` generates seed phrases for GPT-3 to build prompts for DALL-E which are then used to return 4 images for each prompt, the results are pickled into the archive/ folder. The app above randomly loads one of these images for each prompt 
 
 * Step-by-step bullets
