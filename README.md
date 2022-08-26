@@ -15,6 +15,7 @@ There is a better way, with generative models like GPT-3 and DALL-E, where uniqu
 ![BETTER](multimedia/gradio_screen.jpg)
 
 ## Getting Started
+A demo video is available [here](multimedia/gradio_demo.mov)
 
 ### Dependencies
 
