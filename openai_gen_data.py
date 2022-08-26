@@ -5,9 +5,9 @@ import time
 import pickle
 import os
 
-from api_utils import *
-from keys import *
-from seed import *
+from utils.api import CompletionsAPI, TasksAPI
+from utils.keys import gpt_key, dalle_key
+from utils.seed import objects, scenes, connecting_term
 
 # check for keys, exit and raise exception
 if not gpt_key:

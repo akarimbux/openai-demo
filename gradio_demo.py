@@ -5,7 +5,6 @@ import numpy as np
 import sys
 
 fn = sys.argv[1]
-print(fn)
 with open(fn, 'rb') as f:
     grid = pickle.load(f)
 
