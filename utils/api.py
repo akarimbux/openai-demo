@@ -1,5 +1,6 @@
 import requests
 import json
+import time
 
 from PIL import Image
 import requests
@@ -67,14 +68,21 @@ class TasksAPI(OpenAPI):
         return r.json()['status']
     
     def getImagePaths(self, task_id):
-        url = self.url + '/' + task_id
-        r = requests.get(
-            url,
-            headers=self.getHeaders()
-        )
-        r.raise_for_status()
-        resp = r.json()['generations']['data']
-        return [i['generation']['image_path'] for i in resp]
+        while self.getStatus(task_id) == 'pending':
+            # greedy check for task completion
+            time.sleep(10)
+        else:
+            if self.getStatus(task_id) == 'failed':
+                return 'failed'
+            else:
+                url = self.url + '/' + task_id
+                r = requests.get(
+                    url,
+                    headers=self.getHeaders()
+                )
+                r.raise_for_status()
+                resp = r.json()['generations']['data']
+                return [i['generation']['image_path'] for i in resp]
     
     def downloadImage(self, img_path):
         response = requests.get(img_path)
